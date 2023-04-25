@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Regions Dropdown</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+    <h2>Reasons for Methane Emissions per Region</h2>
+    <p>Displayed are the sources of methane as a byproduct of energy harvesting.</p>
+    <select id="selDataset">
+        <option value="africa">Africa</option>
+        <option value="asiaPacific">Asia Pacific</option>
+        <option value="centralSouthAmerica">Central & South America</option>
+        <option value="europe">Europe</option>
+        <option value="middleEast">Middle East</option>
+        <option value="northAmerica">North America</option>
+        <option value="russiaCaspian">Russia & Caspian</option>
+        <option value="other">Other</option>
+        <option value="world">World</option>
+
+    </select>
+
+    <div id="plot"></div>
+
+
+    <script src="http://127.0.0.1:5000/api/v1.0/energy"></script>
+    <script type="text/javascript" src="./static/energybars.js"></script>
+</body>
+</html>
